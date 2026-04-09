@@ -105,9 +105,12 @@ Si ya tenés FFmpeg instalado pero Jupyter no lo detecta, podés iniciar la sesi
 
 **Windows (PowerShell):**
 ```powershell
+where.exe ffmpeg
 $env:FFMPEG_PATH = "C:\ruta\completa\ffmpeg.exe"
 jupyter lab
 ```
+
+Copiá la ruta completa de `ffmpeg.exe` que devuelve `where.exe ffmpeg` y usala en `FFMPEG_PATH`. Si aparecen varias rutas, usá la primera. Esto solo aplica a la sesión actual de PowerShell y no modifica el `PATH` del sistema.
 
 ### 5. Instalar Playwright (navegadores para web scraping)
 
